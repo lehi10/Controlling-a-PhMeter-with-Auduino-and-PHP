@@ -45,12 +45,13 @@ void loop() {
   //float f1=map(fo,0,1023,0,255);
   float f1=map(fo,263,767,0,255);
   // muestra resultado por monitor serie
-  Serial.print("Valor de pH: ");
-  Serial.println(valorPH);
-  Serial.print("Valor en mV: ");
-  Serial.println(fo);
-  Serial.print("rango 0 - 255: ");
-  Serial.println(f1);
+  //Serial.print("Valor de pH: ");
+  Serial.print(valorPH);
+  Serial.println(",");
+  //Serial.print("Valor en mV: ");
+  //Serial.println(fo);
+  //Serial.print("rango 0 - 255: ");
+  //Serial.println(f1);
   //
   // pausa de 900ms antes de la nueva medicion, total 1s
   delay(900);

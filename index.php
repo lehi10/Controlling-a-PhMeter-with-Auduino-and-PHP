@@ -28,40 +28,22 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
   
-<div class="container text-center">    
-  <h3>What We Do</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Current Project</p>
-    </div>
-    <div class="col-sm-4"> 
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Project 2</p>    
-    </div>
-    <div class="col-sm-4">
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-    </div>
+<div class="row">
+  <div class="col-sm-6">
+  <h4>Ph</h4>
+  	<span id="counter"><?php echo $data['counter']; ?></span>
   </div>
-</div><br>
+  <div class="col-sm-6">
+  	<img width="80%" src="vehicle.jpeg">
+  </div>
+</div>
 
-<span id="counter"><?php echo $data['counter']; ?></span>
 
 
 
@@ -81,7 +63,6 @@ $(document).ready(function() {
             }
         });
     }
- 
     setInterval(update, 1000);
 });
 </script>
